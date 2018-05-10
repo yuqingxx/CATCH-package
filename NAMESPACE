@@ -1,0 +1,7 @@
+useDynLib(catch,.registration = TRUE)
+import("tensr","Matrix","MASS")
+export("catch","cv.catch","predict.catch","adjten","catch_matrix")
+S3method("predict","catch")
+importFrom("methods","new")
+importFrom("stats","cov","predict","sd")
+

@@ -1,0 +1,15 @@
+Package: catch
+Title: Covariate-Adjusted Tensor Classification in High-Dimensions
+Version: 1.0
+Description: Performs classification and variable selection on high-dimensional tensors (multi-dimensional arrays) after adjusting for additional covariates (scalar or vectors). The low-dimensional covariates and the high-dimensional tensors are jointly modeled to predict a categorical outcome in a multi-class discriminant analysis setting. The Covariate-Adjusted Tensor Classification in High-dimensions (CATCH) model is fitted in two steps: (1) adjust for the covariates within each class; and (2) penalized estimation with the adjusted tensor using a cyclic block coordinate descent algorithm. The package can provide a solution path for tuning parameter in the penalized estimation step. Special case of the CATCH model includes linear discriminant analysis model and matrix (or tensor) discriminant analysis without covariates.
+Depends: R (>= 3.1.1)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: tensr, Matrix, MASS, methods
+NeedsCompilation: yes
+Packaged: 2017-09-02 18:44:28 UTC; Yuqing
+Author: Yuqing Pan <yuqing.pan@stat.fsu.edu>,
+	Qing Mai <mai@stat.fsu.edu>,
+	Xin Zhang <henry@stat.fsu.edu>
+Maintainer: Yuqing Pan <yuqing.pan@stat.fsu.edu>
